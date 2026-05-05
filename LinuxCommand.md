@@ -140,9 +140,105 @@ head -n ±7 a.txt
 ~~~c
 tail -n
      -f
+~~~ 
+# uniq
+~~~c
+uniq a.txt
+     -c
+     -d
+     -u
+sort a.txt | uniq
+
+~~~ 
+# sed
+~~~c
+sed s/a/b a.txt
+sed 's/old/new/g' file.txt
+sed -i 's/old/new/g' file.txt
+sed -i.bak 's/old/new/g' file.txt
+sed '2d' file.txt
+~~~
+# awk
+~~~c
+awk {} a.txt
+awk -F: {} a.txt
+
+NR NF 
+~~~ 
+# wc
+~~~c
+wc  -l a.txt
+    -w
+    -m
+
+~~~ 
+# sort
+~~~c
+sort -n
+     -r
+     -k
+     -u
+~~~ 
+# diff
+~~~c
+diff a.txt b.txt
+     -u
+     --color
+~~~
+# echo
+~~~c
+echo ${}
+     >  a.txt
+     >> b.txt
+     -e
+~~~
+# sudo/su
+~~~c
+sudo -u
+~~~
+# top
+~~~c
+P
+M
+k+PID
+u
+~~~
+# htop
+~~~c
+F3
+F4
+F5
+F6
+F9
+htop -d
+     -u
+~~~
+# ps
+~~~c
+ps aux
+~~~
+# kill
+~~~c
+kill PID
+     kill -9
+~~~
+# pkill
+~~~c
+pkill name
+      -9
+      -u
+      -f
+先pgrep在pkill
+~~~
+# uptime
+# uname
+~~~c
+uname -r
+      -m
 ~~~
 
- 
+
+
 # 
 ~~~c
 
