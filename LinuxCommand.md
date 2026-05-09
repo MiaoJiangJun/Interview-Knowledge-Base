@@ -236,6 +236,101 @@ pkill name
 uname -r
       -m
 ~~~
+# hostname
+~~~c
+hostname -i
+sudo hostname aaa
+sudo hostname set-hostname
+~~~
+# df
+~~~c
+df
+    -h
+    -i
+~~~
+# ip
+~~~c
+ip  addr
+    link set eth0 up/down
+    route list
+    route add
+    route del
+~~~
+# ss
+~~~c
+ss   -a
+     -t
+     -u
+
+~~~
+# ping
+~~~c
+ping -c
+~~~
+# tcpdump
+~~~c
+tcpdump   -D
+          -i any 
+~~~
+# scp
+~~~c
+scp 用户名@远程IP:/远程/文件.txt /本地/目录/
+scp /本地/文件.txt 用户名@远程IP:/远程/目录/
+~~~
+# rsync
+~~~c
+rsync -av
+rsync -av ./data/ ./backup/
+rsync -av /本地/文件 用户名@远程IP:/远程/目录/
+rsync -av 用户名@远程IP:/远程/文件 /本地/目录/
+~~~
+# ssh
+~~~c
+ssh user ip
+~~~
+# tar
+~~~c
+tar -czf backup.tar.gz /你要打包的目录/
+tar -xf archive.tar.gz
+tar -t archive.tar.gz
+~~~
+# gzip
+~~~c
+gzip a.txt
+gzip -d -n a.txt
+gzip -k a.txt
+~~~
+# zip
+~~~c
+zip k.zip a b ...
+zip -r 
+~~~
+# unzip
+~~~c
+unzip
+      -l
+      -d
+~~~
+# 
+~~~c
+
+~~~
+# 
+~~~c
+
+~~~
+# 
+~~~c
+
+~~~
+# 
+~~~c
+
+~~~
+# 
+~~~c
+
+~~~
 
 
 
